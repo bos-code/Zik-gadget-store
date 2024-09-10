@@ -9,8 +9,9 @@ Objectives.
 * Build Hub's first live working website.
 
 Description.
+ a gadget store where  techs can easily be purchased and delivered at affordable prices.
  
- Built with.
+Built with.
  Javascript.
  SASS.
  HTML.
