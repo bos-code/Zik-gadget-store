@@ -1,0 +1,29 @@
+.navigation {
+    &__sub {
+     
+        background-color: $color-black;
+
+        @include flex;
+
+        .content {
+          display: flex;
+           justify-content: space-around ;
+           gap: 26rem;
+           align-items: center;
+           p{
+            display: inline-block;
+            display: flex;
+           }
+            .call{
+                @include flex;
+                gap: .8rem;
+              
+            }
+            .time{
+                background-image: url('/assest/svg/chevron-dwn.svg');
+                background-position: center right;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
