@@ -1,18 +1,11 @@
-@import './abstracts/mixins';
-@import './abstracts/variable';
+@import "abstract/mixins";
+@import "abstract/variables";
 
-@import './base/animation';
-@import './base/reset';
-@import './base/typography';
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-@import './component/btn';
-@import './component/card';
-@import './component/dropdown';
+@import "layout/footer";
+@import "layout/header";
 
-@import './layout/grid';
-@import './layout/header';
-@import './layout/navigation';
-
-// @import './pages/bar-home';
-@import './pages/home';
-@import './utilities/function';
+@import "pages/section";
