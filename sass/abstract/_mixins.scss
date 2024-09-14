@@ -1,0 +1,10 @@
+@mixin maxWidth {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+@mixin flexContainer {
+  display: flex;
+  align-items: center;
+}
