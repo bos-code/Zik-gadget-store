@@ -1,0 +1,79 @@
+.header--main-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+
+    @include respond(sm-laptop) {
+        overflow-x: scroll;
+    }
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+    }
+
+    :focus {
+        display: none;
+    }
+
+    .card {
+
+        flex: 1;
+        padding: 0 2.5rem;
+
+        @include respond(tab-land) {
+            min-width: 18rem;
+        }
+
+        @include respond(big-phone) {
+            padding: 0 1.5rem;
+        }
+        @include respond(phone) {
+            padding: 0 1.5rem;min-width: 16.5rem;
+        }
+
+
+
+        .main-composition {
+            padding: 0 2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .rate {
+            display: flex;
+            align-items: center;
+
+            padding: .8rem 0;
+
+            .rating {
+                display: flex;
+
+                @include respond (sm-laptop) {
+                    img {
+                        width: .98rem;
+                        height: .98rem;
+                    }
+                }
+            }
+        }
+
+        // .textbox{
+        // }
+        .price {
+            padding: .8rem 0;
+
+            p {
+                display: flex;
+                flex-direction: column;
+
+                .gray-text {
+                    text-decoration: line-through;
+                    text-decoration-color: $gray-color-2;
+                    color: $gray-color-2;
+                }
+            }
+        }
+    }
+}
