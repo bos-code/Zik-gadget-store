@@ -29,3 +29,59 @@ bold: 700
   padding: 0.8rem 2.6rem;
   border-radius: 5rem;
 }
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 50%;
+  }
+
+  @include respond(sm-laptop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 65%;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 75%;
+  }
+}
+
+.heading-primary {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+
+
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.review-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: $gray-color-2;
+}
+
+.price-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.gray-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
