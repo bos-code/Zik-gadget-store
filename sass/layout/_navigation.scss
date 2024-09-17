@@ -45,11 +45,8 @@
             @include flexContainer;
             gap: 0.8rem;
   
-            .facebook-icon {
-            }
+      
   
-            .instagram-icon {
-            }
           }
         }
       }
@@ -66,8 +63,7 @@
         font-size: 1.4rem;
         font-weight: 600;
   
-        .logo {
-        }
+      
   
         .nav-list {
           @include flexContainer;
