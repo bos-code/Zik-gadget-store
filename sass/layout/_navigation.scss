@@ -1,110 +1,112 @@
 .nav-bar {
-    font-family: "Poppins", sans-serif;
-  
-    .nav-container-top {
-      background-color: $color-7;
-      color: $color-2;
-  
-      .header-nav_top {
-        @include maxWidth;
+  font-family: "Poppins", sans-serif;
+
+  .nav-container-top {
+    color: $color-2;
+
+    background-color: $color-7;
+
+    .header-nav_top {
+      @include maxWidth;
+      @include flexContainer;
+      justify-content: space-between;
+      padding: 1.6rem 0;
+      font-size: 1.2rem;
+
+      .workhours {
         @include flexContainer;
-        justify-content: space-between;
-        padding: 1.6rem 0;
-        font-size: 1.2rem;
-  
-        .workhours {
-          @include flexContainer;
-  
-          gap: 0.8rem;
-  
-          .arrow-icon {
-            width: 1.5rem;
-            height: 1.5rem;
-            cursor: pointer;
-          }
-  
-          .date {
-            color: $color-5;
-          }
+
+        gap: 0.8rem;
+
+        .arrow-icon {
+          width: 1.5rem;
+          height: 1.5rem;
+          cursor: pointer;
         }
-  
-        .store-address {
-          @include flexContainer;
-          gap: 0.8rem;
-  
-          .address {
-            color: $color-5;
-          }
-        }
-  
-        .contact-info {
-          @include flexContainer;
-          gap: 1.2rem;
-  
-          .social-links {
-            @include flexContainer;
-            gap: 0.8rem;
-  
-      
-  
-          }
+
+        .date {
+          color: $color-5;
         }
       }
-    }
-  
-    .nav-container-bottom {
-      background-color: $color-2;
-      border-bottom: 1px solid $color-6;
-  
-      .header-nav_bottom {
-        @include maxWidth;
+
+      .store-address {
         @include flexContainer;
-        justify-content: space-between;
-        font-size: 1.4rem;
-        font-weight: 600;
-  
-      
-  
-        .nav-list {
-          @include flexContainer;
-          gap: 2.4rem;
-  
-          .nav-item {
-            .nav-link {
-              color: $color-7;
-            }
-          }
+        gap: 0.8rem;
+
+        .address {
+          color: $color-5;
         }
-  
-        .user-nav {
+      }
+
+      .contact-info {
+        @include flexContainer;
+        gap: 1.2rem;
+
+        .social-links {
           @include flexContainer;
-          gap: 1.6rem;
-  
-          .cart-icon {
-            position: relative;
-            transform: rotateY(180deg);
-          }
-  
-          .cart-items {
-            position: fixed;
-            height: 1.5rem;
-            width: 1.5rem;
-            border-radius: 50%;
-            text-align: center;
-            margin: -0.5rem 0 0 -0.5rem;
-            background-color: $color-3;
-            color: $color-2;
-            font-size: 1rem;
-          }
-  
-          .user-image {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            object-fit: cover;
-          }
+          gap: 0.8rem;
+
+
+
         }
       }
     }
   }
-  
+
+  .nav-container-bottom {
+    @include maxWidth;
+
+    background-color: $color-2;
+    border-bottom: 1px solid $color-6;
+
+    .header-nav_bottom {
+      @include flexContainer;
+      justify-content: space-between;
+      font-size: 1.4rem;
+      font-weight: 600;
+
+
+
+      .nav-list {
+        @include flexContainer;
+        gap: 2.4rem;
+
+        .nav-item {
+          .nav-link {
+            color: $color-7;
+            white-space: nowarp;
+          }
+        }
+      }
+
+      .user-nav {
+        @include flexContainer;
+        gap: 1.6rem;
+
+        .cart-icon {
+          position: relative;
+          transform: rotateY(180deg);
+        }
+
+        .cart-items {
+          position: absolute;
+          height: 1.5rem;
+          width: 1.5rem;
+          border-radius: 50%;
+          text-align: center;
+          margin: -0.5rem 0 0 -0.5rem;
+          background-color: $color-3;
+          color: $color-2;
+          font-size: 1rem;
+        }
+
+        .user-image {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

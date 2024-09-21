@@ -45,18 +45,43 @@
   &--main {
     @include padpage;
 
+
+
     .content {
       margin-top: 1.4rem;
+      position: relative;
 
       .textbox {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        span{
+
+        span {
           color: $accent-blue;
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  .slider--btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include absCenter;
+
+    .img-right {
+      right: 0;
+    }
+
+    .img-left {
+      left: 0;
+    }
+
+    img {
+      width: 5rem;
     }
   }
 }

@@ -27,8 +27,10 @@
         @include respond(big-phone) {
             padding: 0 1.5rem;
         }
+
         @include respond(phone) {
-            padding: 0 1.5rem;min-width: 16.5rem;
+            padding: 0 1.5rem;
+            min-width: 16.5rem;
         }
 
 
