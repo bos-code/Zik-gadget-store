@@ -1,10 +1,9 @@
 .nav-bar {
     font-family: "Poppins", sans-serif;
-  
     .nav-container-top {
-      background-color: $color-7;
       color: $color-2;
-  
+      
+      background-color: $color-7;
       .header-nav_top {
         @include maxWidth;
         @include flexContainer;
@@ -53,11 +52,11 @@
     }
   
     .nav-container-bottom {
+      @include maxWidth;
+
       background-color: $color-2;
       border-bottom: 1px solid $color-6;
-  
       .header-nav_bottom {
-        @include maxWidth;
         @include flexContainer;
         justify-content: space-between;
         font-size: 1.4rem;
@@ -72,6 +71,7 @@
           .nav-item {
             .nav-link {
               color: $color-7;
+              white-space: nowarp;
             }
           }
         }
@@ -86,7 +86,7 @@
           }
   
           .cart-items {
-            position: fixed;
+            position: absolute;
             height: 1.5rem;
             width: 1.5rem;
             border-radius: 50%;

@@ -1,5 +1,5 @@
 @mixin maxWidth {
-  max-width: 130rem;
+max-width: 1300px;
   margin: 0 auto;
   padding: 0 2.4rem;
 }
@@ -15,27 +15,10 @@
   transform: translate(-50%, -50%);
 }
 @mixin padpage{
-  padding: 0 26rem;
-
-@include respond(sm-laptop) {
-  padding: 0 15rem;
-}
-
-@include respond(tab-land) {
-  padding: 0 10rem;
-}
-
-@include respond(tab-port) {
-  padding: 0 7rem;
-}
-
-@include respond(big-phone) {
-  padding: 0 2rem;
-}
-
-@include respond(sm-phone) {
-  padding: 0 1.2rem;
-}
+max-width: 1400px;
+margin: 0 auto;
+padding-left: 5rem;
+padding-right: 5rem;
 }
 
 @mixin flex {
