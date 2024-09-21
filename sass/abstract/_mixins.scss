@@ -1,5 +1,5 @@
 @mixin maxWidth {
-max-width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 2.4rem;
 }
@@ -8,17 +8,19 @@ max-width: 1300px;
   display: flex;
   align-items: center;
 }
+
 @mixin absCenter {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@mixin padpage{
-max-width: 1400px;
-margin: 0 auto;
-padding-left: 5rem;
-padding-right: 5rem;
+
+@mixin padpage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 @mixin flex {
@@ -32,6 +34,7 @@ padding-right: 5rem;
   @include flex;
   flex-direction: column;
 }
+
 @mixin padCenter {
   padding-right: 6vw;
   padding-left: 6vw;
