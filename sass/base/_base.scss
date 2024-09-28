@@ -15,7 +15,14 @@ html {
 body,
 html {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+}
+body{
+  transition: all 5s ease;
+  
+  &::-webkit-scrollbar {
+    background-color: transparent;
+}
+
 }
 
 li {

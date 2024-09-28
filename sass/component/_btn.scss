@@ -1,0 +1,89 @@
+.content__item {
+    // width: 100%;
+
+    @include flex;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+   
+}
+
+.content__item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.link {
+    cursor: pointer;
+    font-size: 1.3rem;
+    position: relative;
+    white-space: nowrap;
+    color: $color-white;
+}
+
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: .6px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.link::before {
+    content: '';
+
+}
+
+
+
+
+.link--leda {
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.link--leda::before {
+    height: .5px;
+    top: calc(100% - 5px);
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.5s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+
+.link--leda:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+
+.link--leda::after {
+    content: attr(data-text);
+    height: 100%;
+    top: 0;
+    background: none;
+    transform-origin: 100% 50%;
+    transform: translate3d(150%, 0, 0);
+    transition: transform 0.5s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+
+.link--leda:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.link--leda span {
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+
+.link--leda:hover span {
+    transform: translate3d(-150%, 0, 0);
+}
+
+.text-btn {
+
+    line-height: 2;
+}

@@ -29,5 +29,6 @@
 	"prettier.tabWidth": 2,
 	"prettier.trailingComma": "es5",
 	"prettier.useTabs": true,
-	"prettier.vueIndentScriptAndStyle": false
+	"prettier.vueIndentScriptAndStyle": false,
+	"liveServer.settings.port": 5501
 }

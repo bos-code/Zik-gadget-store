@@ -1,0 +1,187 @@
+.loader--wrapper {
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include absCenter;
+    position: fixed;
+    z-index: 9;
+    transition: all .3s ease;
+    // animation: background 3s linear infinite;
+    background-image: url(/assets/images/Logo.png);
+    background: linear-gradient(-45deg, #4F5C58, #f0f0f0, #050F24, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+    height: 100vh;
+
+    body {
+        background-color: black;
+        overflow: hidden;
+    }
+
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0px;
+        height: 0px;
+        border-radius: 100%;
+        opacity: 0;
+        border: 5px solid white;
+        animation: anim 4s infinite linear;
+    }
+
+    @keyframes anim {
+        0% {
+            opacity: 0.0;
+            width: 0vmin;
+            height: 0vmin;
+        }
+
+        10% {
+            opacity: 0.2;
+        }
+
+        100% {
+            opacity: 0.0;
+            width: 100vmin;
+            height: 100vmin;
+        }
+    }
+
+    div:nth-child(1) {
+        animation-delay: 200ms;
+    }
+
+    div:nth-child(2) {
+        animation-delay: 400ms;
+    }
+
+    div:nth-child(3) {
+        animation-delay: 600ms;
+    }
+
+    div:nth-child(4) {
+        animation-delay: 800ms;
+    }
+
+    div:nth-child(5) {
+        animation-delay: 1000ms;
+    }
+
+    div:nth-child(6) {
+        animation-delay: 1200ms;
+    }
+
+    div:nth-child(7) {
+        animation-delay: 1400ms;
+    }
+
+    div:nth-child(8) {
+        animation-delay: 1600ms;
+    }
+
+    div:nth-child(9) {
+        animation-delay: 1800ms;
+    }
+
+
+
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+}
+
+.lds-dual-ring,
+.lds-dual-ring:after {
+    box-sizing: border-box;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    transition: transform .02s, opacity 0.8s, visibility 0.8s, ease .3s;
+
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6.4px solid currentColor;
+    border-color: currentColor transparent currentColor transparent;
+
+    animation: lds-dual-ring 3s linear infinite;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0turn);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: rotate(5turn);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes background {
+    0% {
+        backdrop-filter: blur(10px);
+        background-color: #fff;
+    }
+
+    20% {
+        backdrop-filter: blur(5px);
+        background-color: pink;
+    }
+
+    40% {
+        backdrop-filter: blur(10px);
+        background-color: yellow;
+    }
+
+    60% {
+        backdrop-filter: blur(20px);
+        background-color: green;
+    }
+
+    80% {
+        backdrop-filter: blur(5px);
+        background-color: blue;
+    }
+
+    100% {
+        backdrop-filter: blur(2px);
+        background-color: black;
+    }
+}
